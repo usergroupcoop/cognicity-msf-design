@@ -34,7 +34,8 @@ Design Specifications for MSF CogniCity
 ### Schema
 - Tables
   - Events (ID, status, type, geometry, metadata)
-  - Reports (ID, status, timestamp with time zone, geometry, report_content)
+  - Reports (ID, EVENT_ID, status, timestamp with time zone, geometry, report_content)
+  - Contacts(ID, location, contact_details)
 
 ### API
 GET /events - get a list of all events in system, returned as event objects
